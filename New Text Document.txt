@@ -1,0 +1,59 @@
+                        ┌──────────────────────────┐
+                        │        User              	   │
+                        │  (Industrial Engineer)           │
+                        └─────────────┬────────────┘
+                                      │
+                                      ▼
+                        ┌──────────────────────────┐
+                        │      Streamlit UI        	   │
+                        │  - Chat Interface        	   │
+                        │  - Image Renderer        	   │
+                        │  - Specs Table Display   	   │
+                        └─────────────┬────────────┘
+                                      │ REST API
+                                      ▼
+                    ┌────────────────────────────────┐
+                    │           FastAPI Backend      	       │
+                    │  - Request Handling            	       │
+                    │  - Session Management          	       │
+                    │  - Response Formatting         	       │
+                    └─────────────┬──────────────────┘
+                                  │
+                                  ▼
+                    ┌────────────────────────────────┐
+                    │        CrewAI Orchestrator     │
+                    │--------------------------------│
+                    │  1️⃣ Intent Analyzer Agent      │
+                    │  2️⃣ Retrieval Agent            │
+                    │  3️⃣ Recommendation Agent       │
+                    └─────────────┬──────────────────┘
+                                  │
+                 ┌────────────────┼─────────────────┐
+                 ▼                                  ▼
+    ┌──────────────────────┐             ┌────────────────────────┐
+    │     FAISS Vector DB  │             │       OpenAI LLM       │
+    │----------------------│             │------------------------│
+    │ - Embedded Tool Data │             │ - Reasoning            │
+    │ - Semantic Search    │             │ - Ranking              │
+    │ - Metadata Filters   │             │ - Explanation          │
+    └───────────┬──────────┘             └───────────┬────────────┘
+                │                                      │
+                ▼                                      ▼
+        ┌────────────────┐                  ┌────────────────────┐
+        │ Structured Tool│                  │  Final Structured  │
+        │   Candidates   │                  │     Response       │
+        └─────────┬──────┘                  └─────────┬──────────┘
+                  │                                     │
+                  ▼                                     ▼
+        ┌──────────────────────────────┐
+        │   Local Image Storage        │
+        │  /images/nx-sp250.jpg        │
+        └──────────────────────────────┘
+                  │
+                  ▼
+        ┌──────────────────────────────┐
+        │  Streamlit Renders:          │
+        │  - AI Explanation            │
+        │  - Tool Image                │
+        │  - Specs Table               │
+        └──────────────────────────────┘

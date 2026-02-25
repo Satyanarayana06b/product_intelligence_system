@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+streamlit
+crewai
+openai
+faiss-cpu
+python-dotenv
+pydantic
+tiktoken
+httpx
